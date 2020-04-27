@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Site de Cadastro de produtos</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+		
+	</head>
+	
+	<body>
+		<br>
+		<h1> <center>Cadastre seu produto!</center> </h1>
+		<br> <br>
+		<label> <center>Cadastrar Produto</center> </label>
+		<br>
+		
+		<script src="scripts.js"></script>
+		
+		<div id="divForm">
+			<form method="GET" an action="salvar.php" onsubmit="return validar()" enctype="multipart/form-data">
+				<br>
+				<label><center>Nome:</center></label>
+				<center> <input type="text" name="txtNome" id="txtNome" /> </center> <br> <br>
+				<label><center>Preço:</center></label>
+				<center> <input type="text" name="txtPreco" id="txtPreco" /> </center> <br> <br>
+				<label><center>Quantidade:</center></label>
+				<center> <input type="text" name="txtQnt" id="txtQnt" /> </center> <br> <br>
+				<label><center>Data de Validade:</center></label>
+				<center> <input type="text" name="txtData" id="txtData" /> </center> <br> <br>
+				<label><center>Categoria:</center></label>
+				<center> <select name="Categoria">
+							<option value="categ1" selected>Selecione...</option>
+							<option value="categ2">Alimentício</option>
+							<option value="categ3">Eletrônico</option>
+							<option value="categ4">Vestuário</option>
+							<option value="categ5">Higiene</option>
+							<option value="categ6">Livro</option>
+							<option value="categ7">Brinquedos</option>
+						</select></center> <br> <br>
+				<center><label for="avatar"> Escolha uma foto:</label></center>
+				
+				<center><input type="file"
+					id="avatar" name="avatar"
+				accept="image/png, image/jpeg"></center>
+					
+				<br> <br>
+				<center> <input type="submit" value="Salvar"/> </center>
+				
+			</form>
+		</div>
+		
+	</body>
+</html>
